@@ -1,10 +1,11 @@
 import React from 'react'
 import Logo from '../portfolio.png';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../App.css';
 export const NavBar = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky">
               <div className="container">
                     
               <a className="navbar-brand" href="#"><img className="logo" src={Logo} alt="logo ..."/></a>

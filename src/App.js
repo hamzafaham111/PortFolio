@@ -1,8 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Particles from 'react-particles-js';
 import NavBar from './Components/NavBar';
 import Header from './Components/Header';
-import Particles from 'react-particles-js';
+import AboutMe from './Components/AboutMe';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
     />
     <NavBar/>
     <Header/>
+    <AboutMe/>
+    <Skills/>
     </>
   )
 }
