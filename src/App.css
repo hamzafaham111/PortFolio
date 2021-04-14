@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 body
 {
   font-family: "Roboto Condensed", sans-serif;
@@ -10,10 +11,9 @@ nav
   z-index: 2;
   width: 100vw;
 }
-.logo
+.navbar-brand h2
 {
-  width: 10.25rem;
-  height: 4rem;
+  font-family: 'RocknRoll One', sans-serif;
 }
 :root
 {
@@ -46,7 +46,7 @@ nav ul li{
   background-image:linear-gradient(
     rgba(39, 36, 36, 0.45), 
     rgba(133, 129, 129, 0.45)
-  ), url("./240_F_419893950_XY2aVUT5S5cPObSXOWFpBMi8da9jtMfH.jpg");
+  ), url("./zKYG1E.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -211,3 +211,44 @@ nav ul li{
  {
    font-size: 12px;
  }
+ /*------------------------------------------Services----------------------------------------*/
+ .services
+ {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .services>.services_body
+ {
+   display: flex;
+ }
+.services>.services_body>.services_blocks
+{
+  width: 300px;
+  height: 200px;
+  background-color:rgb(25, 37, 37);
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.services>.services_body>.services_blocks h5
+{
+  font-weight: bold;
+  margin-top: 5px;
+}
+.services>.services_body>.services_blocks p
+{
+  font-size: 14px;
+}
+.services>.services_body>.services_blocks>.icons
+{
+  width: 100%;
+  font-size: 60px;
+  color: #F50057;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

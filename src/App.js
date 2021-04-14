@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
+import Services from './Components/Services';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
     <Header/>
     <AboutMe/>
     <Skills/>
+    <Services/>
     </>
   )
 }
