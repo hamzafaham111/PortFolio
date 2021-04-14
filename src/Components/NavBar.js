@@ -22,7 +22,7 @@ export const NavBar = () => {
                       <a className="nav-link" href="#">About Me <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                      <a className="nav-link" href="#">Services <span className="sr-only">(current)</span></a>
+                      <a className="nav-link" href="#">Skills <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
                       <a className="nav-link" href="#">How Work <span className="sr-only">(current)</span></a>

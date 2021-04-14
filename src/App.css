@@ -191,10 +191,23 @@ nav ul li{
  {
    height: 100vh;
    width: 100vw;
-   border: solid black 1px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: 'Merriweather', serif;
  }
- .percnt
+ .skills>.mySkills
  {
-   width: 100px;
-   height: 100px;
+   display: flex;
+   padding: 10px;
+ }
+ .skills>.mySkills div
+ {
+   margin-left: 10px;
+   text-align: center;
+ }
+ .skills>.mySkills div p
+ {
+   font-size: 12px;
  }
