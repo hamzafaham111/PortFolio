@@ -9,7 +9,7 @@ body
 nav
 {
   z-index: 2;
-  width: 100vw;
+  width: 100%;
 }
 .navbar-brand h2
 {
@@ -51,7 +51,7 @@ nav ul li{
   background-size: cover;
   background-position: center;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
 }
 .main_info
 {
@@ -111,7 +111,7 @@ nav ul li{
 {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 
@@ -125,7 +125,7 @@ nav ul li{
  {
    height: 100vh;
    position: relative;
-   width: 100vw;
+   width: 100%;
  }
  .about_me_info
  {
@@ -190,7 +190,7 @@ nav ul li{
  .skills
  {
    height: 100vh;
-   width: 100vw;
+   width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -214,7 +214,7 @@ nav ul li{
  /*------------------------------------------Services----------------------------------------*/
  .services
  {
-   width: 100vw;
+   width: 100%;
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -225,14 +225,26 @@ nav ul li{
  {
    display: flex;
  }
+
+ @media (max-width: 1000px){
+  .services>.services_body{
+    flex-direction: column;
+  }
+ }
 .services>.services_body>.services_blocks
 {
   width: 300px;
-  height: 200px;
+  height: 220px;
   background-color:rgb(25, 37, 37);
   margin: 10px;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
 }
 .services>.services_body>.services_blocks h5
 {
@@ -242,6 +254,7 @@ nav ul li{
 .services>.services_body>.services_blocks p
 {
   font-size: 14px;
+  width: 80%;
 }
 .services>.services_body>.services_blocks>.icons
 {
@@ -251,4 +264,78 @@ nav ul li{
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+/*-------------------------------Contact Page---------------------------*/
+.contact
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact>.contact_me
+{
+  padding: 30px 20px 30px 20px;
+  background-color: rgb(245, 234, 239);
+  display: flex;
+  border-radius: 10px;
+}
+.contact>.contact_me>.right-side
+{
+  margin-left: 25px;
+}
+.contact>.contact_me>.left-side
+{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family:cursive;
+  color:rgb(15, 136, 70);
+}
+@media(max-width: 920px){
+  .contact>.contact_me>.left-side{
+    display: none;
+  }
+}
+.contact>.contact_me>.left-side p
+{
+  font-size: 30px;
+  font-weight: bold;
+  width: 70%;
+}
+.contact>.contact_me>.right-side>.contact_me_form_elements input
+{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid black 2px;
+  outline: none;
+}
+.contact>.contact_me>.right-side>.contact_me_form_elements textarea
+{
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid black 2px;
+  outline: none;
+}
+
+.contact>.contact_me>.right-side>.contact_me_form_elements
+{
+  margin: 5px 0 5px 0 ;
+}
+.contact>.contact_me>.right-side>.contact_me_form_elements Button
+{
+  background-color:#13cc1c;
+  text-transform: capitalize;
+ font-weight: bolder;
+ color: white;
+ padding: 10px 15px 10px 15px;
 }

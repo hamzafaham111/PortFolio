@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Services from './Components/Services';
-
+import Contact from './Components/Contact';
 function App() {
   return (
     <>
@@ -19,7 +19,6 @@ function App() {
             enable: true,
             value_area: 900
           }
-
         },
         shape: {
           type: "stars",
@@ -36,6 +35,7 @@ function App() {
     <AboutMe/>
     <Skills/>
     <Services/>
+    <Contact/>
     </>
   )
 }
