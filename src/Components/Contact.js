@@ -27,7 +27,7 @@ const Contact = () =>
            <div className="contact_me_form_elements">
            <Button>Messege <SendIcon/></Button>
            </div>
-           <div className="icons" style={{width:"100%",textAlign:"center"}}>
+           <div className="icons" style={{textAlign:"center"}}>
                <a href="#"><FacebookIcon style={{fontSize:"40px", color:"#3367D6" }}/></a>
                <a href="#"><InstagramIcon style={{fontSize:"40px", color:"#C32F5C" }}/></a>
            </div>

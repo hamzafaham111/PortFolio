@@ -37,7 +37,7 @@ nav ul li{
 
 .navbar-nav > li > a:focus
 {
-  border-bottom: solid yellow 3px;
+  border-bottom: solid #FFA500 3px;
 }
 /*-----------------------------Header------------------*/
 .header_wraper
@@ -72,7 +72,7 @@ nav ul li{
 .main_info h1
 {
   text-transform: uppercase;
-  color: orange;
+  color: #FFA500;
 }
 @media (max-width: 900px) {
   .main_info h1{
@@ -93,7 +93,7 @@ nav ul li{
 /*------------------------------------HEADER MAIN OFFER BUTTON-----------------*/
 .btn-main-offer
 {
-  border: solid red 1px;
+  border: solid #FFA500 1px;
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.65rem 0.75rem 0.75rem 0.75rem;
@@ -103,7 +103,7 @@ nav ul li{
 .btn-main-offer:hover
 {
   text-decoration: none;
-  background-color: rgb(252, 102, 102);
+  background-color: rgb(167, 167, 8);
   color: white;
   transition: .2s ease-in-out;
 }
@@ -189,25 +189,40 @@ nav ul li{
  /*------------------------------------Skills--------------------------------------*/
  .skills
  {
+
+   display: flex;
+   flex-direction: row;
    height: 100vh;
    width: 100%;
-   display: flex;
    justify-content: center;
    align-items: center;
+ }
+ .skills>.skills_image 
+ {
+  display: flex;
+align-items: center;
+justify-content: center;
+justify-items: center;
+align-content: center;
+ }
+ .skills>.skills_body
+ {
+   display: flex;
    flex-direction: column;
    font-family: 'Merriweather', serif;
+   
  }
- .skills>.mySkills
+ .skills>.skills_body>.mySkills
  {
    display: flex;
    padding: 10px;
  }
- .skills>.mySkills div
+ .skills>.skills_body>.mySkills div
  {
    margin-left: 10px;
    text-align: center;
  }
- .skills>.mySkills div p
+ .skills>.skills_body>.mySkills div p
  {
    font-size: 12px;
  }
@@ -278,10 +293,11 @@ nav ul li{
 .contact>.contact_me
 {
   padding: 30px 20px 30px 20px;
-  background-color: rgb(245, 234, 239);
+
   display: flex;
   border-radius: 10px;
-}
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
 .contact>.contact_me>.right-side
 {
   margin-left: 25px;
@@ -296,7 +312,7 @@ nav ul li{
   justify-items: center;
   align-items: center;
   font-family:cursive;
-  color:rgb(15, 136, 70);
+  color:#F50057;
 }
 @media(max-width: 920px){
   .contact>.contact_me>.left-side{
@@ -338,4 +354,19 @@ nav ul li{
  font-weight: bolder;
  color: white;
  padding: 10px 15px 10px 15px;
+}
+/*-------------------------------------------------------Footer-----------------------------------------*/
+.footer_container
+{
+  background-color: rgb(20, 39, 39);
+}
+.footer
+{
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+.footer div
+{
+ padding: 10px;
 }

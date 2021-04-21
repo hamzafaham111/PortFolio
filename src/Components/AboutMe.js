@@ -8,7 +8,7 @@ const AboutMe = () =>
 {
     return(
         <>
-            <div className="container about_me" id="about_me">
+            <div className="container-fluide about_me" id="about_me">
                 <div className="about_me_info">
                     <div className="my_image">
                     <img src={MyPicture}/>
